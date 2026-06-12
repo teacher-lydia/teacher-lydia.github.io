@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://teacher-lydia.github.io/sitemap.xml
