@@ -482,6 +482,23 @@
   .gclass li{font-size:.92rem;color:var(--ink-soft);padding:5px 0 5px 24px;position:relative;line-height:1.5;}
   .gclass li::before{content:"✦";position:absolute;left:0;color:var(--teal);font-weight:800;}
   .gclass .g-note{font-size:.82rem;color:var(--ink-soft);margin:0 0 18px;font-style:italic;}
+  .abc-schedule-label{font-size:.86rem;font-weight:800;margin:2px 0 10px;}
+  .abc-session-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:auto;}
+  .abc-session{
+    display:flex;flex-direction:column;padding:14px;background:var(--cream);
+    border:2px dashed var(--ink);border-radius:14px;
+  }
+  .abc-session.weekend{background:#FFF0E8;border-style:solid;}
+  .abc-session .session-tag{font-weight:900;font-size:.95rem;line-height:1.4;}
+  .abc-session .session-tag small{
+    display:inline-block;margin-left:4px;padding:1px 7px;border-radius:999px;
+    background:var(--mustard);border:1.5px solid var(--ink);font-size:.68rem;vertical-align:1px;
+  }
+  .abc-session .session-time{font-size:.82rem;color:var(--ink-soft);margin-top:5px;line-height:1.55;}
+  .abc-session .session-time strong{display:block;color:var(--ink);font-size:.9rem;}
+  .abc-session .g-btn{margin-top:12px;padding:10px 12px;font-size:.88rem;box-shadow:3px 3px 0 var(--ink);}
+  .abc-session .g-btn.weekend{background:var(--teal);}
+  @media(max-width:520px){.abc-session-grid{grid-template-columns:1fr;}}
   .g-btn{
     margin-top:auto;display:inline-flex;align-items:center;justify-content:center;gap:8px;
     font-weight:800;font-size:1rem;padding:13px 22px;border-radius:999px;
@@ -654,7 +671,7 @@
       <div class="ct-ico">🎓</div>
       <h3>英文團體課</h3>
       <div class="ct-en">GROUP CLASSES</div>
-      <p>ABC 字母課，以及「主題情境寫作與演說」雙核心課程，小班制打好扎實基礎。</p>
+      <p>ABC 字母課開設平日班與假日班，另有「主題情境寫作與演說」雙核心課程，小班制打好扎實基礎。</p>
       <span class="ct-btn form">✦ 看課程・報名</span>
     </a>
     <a class="ctype" href="#single" style="color:inherit;">
@@ -697,8 +714,20 @@
           <li>4 人開班、8 人滿班的小班制</li>
           <li>含 24 張字母美勞作品、專屬資料夾，還有回家複習用的線上資源</li>
         </ul>
-        <p class="g-note">上課時間、堂數、費用與早鳥優惠 → 詳見報名表單</p>
-        <a class="g-btn" href="https://forms.gle/3hAf8VEPCd7fNNTB8" target="_blank" rel="noopener">📝 ABC 字母課・報名表單</a>
+        <p class="g-note">上課地點、完整日期、費用與早鳥優惠 → 詳見各班別報名表單</p>
+        <div class="abc-schedule-label">選擇適合的上課時段：</div>
+        <div class="abc-session-grid">
+          <div class="abc-session">
+            <div class="session-tag">平日班</div>
+            <div class="session-time">每週三<strong>16:00–17:00</strong></div>
+            <a class="g-btn" href="https://forms.gle/3hAf8VEPCd7fNNTB8" target="_blank" rel="noopener">📝 平日班報名</a>
+          </div>
+          <div class="abc-session weekend">
+            <div class="session-tag">假日班 <small>新班開放</small></div>
+            <div class="session-time">隔週日<strong>15:00–16:00</strong></div>
+            <a class="g-btn weekend" href="https://docs.google.com/forms/d/e/1FAIpQLSfBjvQezOvylkRmiRK71TohpBBDd58XBDD8oju78r2mLpDDLQ/viewform" target="_blank" rel="noopener">📝 假日班報名</a>
+          </div>
+        </div>
       </div>
       <div class="gclass">
         <span class="g-badge">適合國小低・中年級</span>
