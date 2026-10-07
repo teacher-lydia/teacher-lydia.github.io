@@ -110,42 +110,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "priceCurrency": "TWD",
         "availability": "https://schema.org/LimitedAvailability"
       }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://www.teacherlydia.com/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "一對一外師英文教學適合哪些學習者？",
-          "acceptedAnswer": {"@type": "Answer", "text": "課程同時開放兒童與成人，會先依學習者的年齡、英文程度、學習節奏與目標評估，再規劃適合的上課內容。"}
-        },
-        {
-          "@type": "Question",
-          "name": "兒童一對一英文課可以加強什麼？",
-          "acceptedAnswer": {"@type": "Answer", "text": "可依孩子的程度加強英文基礎、口語表達、校內作業與專題，或建立開口信心；教學會配合年齡與興趣調整活動和引導方式。"}
-        },
-        {
-          "@type": "Question",
-          "name": "成人一對一英文課可以加強什麼？",
-          "acceptedAnswer": {"@type": "Answer", "text": "成人可依需求加強日常會話、職場溝通、專業簡報或實際生活情境的英文表達，課程內容會依目前程度與使用目標客製。"}
-        },
-        {
-          "@type": "Question",
-          "name": "兒童與成人一對一英文課如何預約？",
-          "acceptedAnswer": {"@type": "Answer", "text": "請先填寫一對一課程意願表單。Teacher Lydia 會依釋出的時段與適合的課程安排主動聯繫，目前時段有限，送出表單不代表已完成報名。"}
-        },
-        {
-          "@type": "Question",
-          "name": "兒童與成人會使用相同的教材和進度嗎？",
-          "acceptedAnswer": {"@type": "Answer", "text": "不會套用同一套固定進度。兒童課程會依年齡、個性與興趣調整；成人課程則會依生活、工作或專業需求安排內容。"}
-        },
-        {
-          "@type": "Question",
-          "name": "除了兒童與成人一對一英文，還有哪些課程？",
-          "acceptedAnswer": {"@type": "Answer", "text": "網站另有 ABC 字母團體課、親子英文繪本課與節慶主題活動。ABC 字母課目前僅開放假日班；主題情境寫作與演說雙核心課程本期已滿班。"}
-        }
-      ]
     }
   ]
 }
@@ -411,6 +375,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .more-books .btn{font-size:.95rem;padding:11px 24px;background:#06C755;color:#fff;box-shadow:4px 4px 0 var(--ink);}
   .more-books .btn:hover{box-shadow:1px 1px 0 var(--ink);transform:translate(3px,3px);}
   @media(max-width:760px){.more-books{padding:26px 22px;}.book-pile{flex-wrap:wrap;justify-content:center;}}
+  .story-partners{margin-top:56px;padding-top:40px;border-top:3px dashed var(--ink);scroll-margin-top:90px;}
+  .story-partners .sp-kicker{display:inline-block;background:var(--mustard);border:2px solid var(--ink);border-radius:999px;padding:4px 13px;font-family:'Baloo 2';font-size:.78rem;font-weight:800;letter-spacing:.5px;}
+  .story-partners h4{font-size:1.35rem;margin-top:12px;}
+  .story-partners > p{color:var(--ink-soft);font-size:.94rem;margin-top:5px;}
+  .story-partners .partners-grid{margin-top:28px;}
 
   /* ===== PARTNERS ===== */
   .partners{background:var(--cream);}
@@ -771,6 +740,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="#courses">課程總覽</a>
     <a href="#club">學習社群</a>
     <a href="#partners">合作教室</a>
+    <a href="one-on-one.html">一對一 FAQ</a>
     <a href="#gallery">課堂花絮</a>
     <a class="nav-cta" href="https://line.me/R/ti/p/@751efmgv?oat_content=url&ts=05181912" target="_blank" rel="noopener">報名課程 ✦</a>
   </div>
@@ -869,7 +839,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="courses" id="courses">
   <span class="sec-tag">OUR CLASSES 🎒</span>
   <h2 class="sec-title">Teacher Lydia 開設的課程<span class="dot">.</span></h2>
-  <p class="sec-lead">從兒童與成人一對一英文，到幼兒團體課、親子共讀與主題活動，依年齡、程度與學習目標選擇適合的課程。</p>
+  <p class="sec-lead">從兒童與成人一對一英文、幼兒團體課與節慶活動，到親子共讀與合作教室，依年齡、程度與學習目標選擇適合的課程。</p>
 
   <!-- quick course-type nav -->
   <div class="ctype-grid">
@@ -887,19 +857,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>ABC 字母課目前僅開放假日班；主題情境寫作與演說雙核心課程本期已滿班。</p>
       <span class="ct-btn form">✦ 查看課程狀態</span>
     </a>
-    <a class="ctype" href="#story" style="color:inherit;">
-      <div class="ct-ico">📖</div>
-      <h3>親子故事課</h3>
-      <div class="ct-en">STORYTIME TOGETHER</div>
-      <p>每月主題繪本，把單字藏進故事、把品格放進遊戲，親子一起玩中學英文。</p>
-      <span class="ct-btn">👀 看課程</span>
-    </a>
     <a class="ctype" href="#events" style="color:inherit;">
       <div class="ct-ico">🎉</div>
       <h3>特殊活動企劃</h3>
       <div class="ct-en">SPECIAL EVENTS</div>
       <p>10／31 萬聖節全英文派對開放報名，適合 3–7 歲；另有聖誕節主題活動。</p>
       <span class="ct-btn">🎃 看活動與報名</span>
+    </a>
+    <a class="ctype" href="#story" style="color:inherit;">
+      <div class="ct-ico">📖</div>
+      <h3>親子故事課 × 合作教室</h3>
+      <div class="ct-en">STORYTIME &amp; PARTNER STUDIOS</div>
+      <p>每月主題繪本搭配台北合作親子教室，方便家長查看故事課與開課地點。</p>
+      <span class="ct-btn">📍 看故事課與教室</span>
     </a>
   </div>
 
@@ -921,7 +891,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <strong>兒童與成人皆可登記</strong>
         <p>填寫意願表單後，Lydia 會依釋出的時段與適合的課程安排主動聯繫。</p>
         <a class="g-btn" href="https://forms.gle/LAtoZ8cNJPi3TinR8" target="_blank" rel="noopener">📝 填一對一意願表單</a>
-        <a class="faq-link" href="#faq">先看一對一課程常見問題</a>
+        <a class="faq-link" href="one-on-one.html">查看一對一課程常見問題</a>
       </div>
     </div>
   </div><!-- /course-block single -->
@@ -970,39 +940,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="gnote-bar">⚠️ ABC 字母課目前僅開放假日班，名額以「完成繳費」的先後順序為準；雙核心課程本期已滿班。假日班日期、主題、請假補課規定與匯款資訊請詳閱報名表單。有任何問題，歡迎透過 <a href="https://lin.ee/P3pqOXW" target="_blank" rel="noopener" style="color:var(--coral);font-weight:800;text-decoration:underline;">LINE</a> 與我們聯繫。</div>
   </div><!-- /course-block group -->
 
-  <!-- 3. 親子故事課 -->
-  <div class="course-block" id="story">
-    <div class="cb-head"><span class="cb-num">3</span><h3>親子故事課 × 精選繪本</h3></div>
-    <p class="cb-lead">每堂課從一本經典繪本出發：把單字藏進故事裡、把品格放進遊戲中，再用音樂和手作收尾。孩子玩得開心，英文自然留下來。每個月都有不同的繪本主題！</p>
-
-    <div class="more-books">
-      <div class="book-pile">
-        <img src="繪本%20(6).jpg" alt="The Rainbow Fish" loading="lazy">
-        <img src="繪本%20(3).jpg" alt="The Lion Inside" loading="lazy">
-        <img src="繪本%20(2).jpg" alt="The Very Hungry Caterpillar" loading="lazy">
-        <img src="繪本%20(9).jpg" alt="The Color Monster" loading="lazy">
-        <img src="繪本%20(1).webp" alt="Go Away, Big Green Monster!" loading="lazy">
-        <img src="繪本%20(14).jpg" alt="Pete the Cat and the Perfect Pizza Party" loading="lazy">
-        <img src="繪本%20(5).jpg" alt="We Are Definitely Human" loading="lazy">
-        <img src="繪本%20(12).jpg" alt="The Pirates on the Bus" loading="lazy">
-        <img src="繪本%20(11).jpg" alt="Ten Little Robots" loading="lazy">
-        <img src="繪本%20(10).jpg" alt="There's a Bear in Your Book" loading="lazy">
-        <img src="繪本%20(13).jpg" alt="Hello World! Music" loading="lazy">
-        <img src="繪本%20(7).jpg" alt="Too Noisy!" loading="lazy">
-        <img src="繪本%20(3).png" alt="Ruby's Chinese New Year" loading="lazy">
-        <img src="繪本%20(5).png" alt="Ready, Set, Go!" loading="lazy">
-      </div>
-      <div class="mb-text">
-        <h3>每個月都有不同的主題繪本 ⋯📚</h3>
-        <p>想知道接下來要上哪一本繪本嗎？</p>
-        <a class="btn" href="https://line.me/R/ti/p/@751efmgv?oat_content=url&ts=05181912" target="_blank" rel="noopener">💬 加 LINE 看本月課表</a>
-      </div>
-    </div>
-  </div><!-- /course-block story -->
-
-  <!-- 4. 特殊活動企劃 -->
+  <!-- 3. 特殊活動企劃 -->
   <div class="course-block" id="events">
-    <div class="cb-head"><span class="cb-num">4</span><h3>特殊活動企劃</h3></div>
+    <div class="cb-head"><span class="cb-num">3</span><h3>特殊活動企劃</h3></div>
     <p class="cb-lead">萬聖節派對現正開放報名！由 Teacher Lydia 與另外 2 位外師共同帶領，透過唱跳、繪本、闖關遊戲與手作，讓孩子在全英文派對中自然開口互動。</p>
     <div class="event-grid">
       <article class="event featured">
@@ -1049,36 +989,65 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div><!-- /course-block events -->
 
-  <div class="faq-block" id="faq">
-    <div class="cb-head"><span class="cb-num">?</span><h3>一對一外師英文教學常見問題</h3></div>
-    <p class="cb-lead">整理兒童與成人在找台北一對一英文課、英文口說與客製英文課程時，最常詢問的問題。</p>
-    <div class="faq-grid">
-      <article class="faq-item">
-        <h4>一對一外師英文教學適合哪些學習者？</h4>
-        <p>課程同時開放兒童與成人，會先依學習者的年齡、英文程度、學習節奏與目標評估，再規劃適合的上課內容。</p>
-      </article>
-      <article class="faq-item">
-        <h4>兒童一對一英文課可以加強什麼？</h4>
-        <p>可依孩子的程度加強英文基礎、口語表達、校內作業與專題，或建立開口信心；教學會配合年齡與興趣調整活動和引導方式。</p>
-      </article>
-      <article class="faq-item">
-        <h4>成人一對一英文課可以加強什麼？</h4>
-        <p>成人可依需求加強日常會話、職場溝通、專業簡報或實際生活情境的英文表達，課程內容會依目前程度與使用目標客製。</p>
-      </article>
-      <article class="faq-item">
-        <h4>兒童與成人一對一英文課如何預約？</h4>
-        <p>請先填寫一對一課程意願表單。Teacher Lydia 會依釋出的時段與適合的課程安排主動聯繫，目前時段有限，送出表單不代表已完成報名。</p>
-      </article>
-      <article class="faq-item">
-        <h4>兒童與成人會使用相同的教材和進度嗎？</h4>
-        <p>不會套用同一套固定進度。兒童課程會依年齡、個性與興趣調整；成人課程則會依生活、工作或專業需求安排內容。</p>
-      </article>
-      <article class="faq-item">
-        <h4>除了兒童與成人一對一英文，還有哪些課程？</h4>
-        <p>網站另有 ABC 字母團體課、親子英文繪本課與節慶主題活動。ABC 字母課目前僅開放假日班；主題情境寫作與演說雙核心課程本期已滿班。</p>
-      </article>
+  <!-- 4. 親子故事課與合作教室 -->
+  <div class="course-block" id="story">
+    <div class="cb-head"><span class="cb-num">4</span><h3>親子故事課 × 精選繪本＋合作教室</h3></div>
+    <p class="cb-lead">每堂課從一本經典繪本出發：把單字藏進故事裡、把品格放進遊戲中，再用音樂和手作收尾。孩子玩得開心，英文自然留下來。每個月都有不同的繪本主題！</p>
+
+    <div class="more-books">
+      <div class="book-pile">
+        <img src="繪本%20(6).jpg" alt="The Rainbow Fish" loading="lazy">
+        <img src="繪本%20(3).jpg" alt="The Lion Inside" loading="lazy">
+        <img src="繪本%20(2).jpg" alt="The Very Hungry Caterpillar" loading="lazy">
+        <img src="繪本%20(9).jpg" alt="The Color Monster" loading="lazy">
+        <img src="繪本%20(1).webp" alt="Go Away, Big Green Monster!" loading="lazy">
+        <img src="繪本%20(14).jpg" alt="Pete the Cat and the Perfect Pizza Party" loading="lazy">
+        <img src="繪本%20(5).jpg" alt="We Are Definitely Human" loading="lazy">
+        <img src="繪本%20(12).jpg" alt="The Pirates on the Bus" loading="lazy">
+        <img src="繪本%20(11).jpg" alt="Ten Little Robots" loading="lazy">
+        <img src="繪本%20(10).jpg" alt="There's a Bear in Your Book" loading="lazy">
+        <img src="繪本%20(13).jpg" alt="Hello World! Music" loading="lazy">
+        <img src="繪本%20(7).jpg" alt="Too Noisy!" loading="lazy">
+        <img src="繪本%20(3).png" alt="Ruby's Chinese New Year" loading="lazy">
+        <img src="繪本%20(5).png" alt="Ready, Set, Go!" loading="lazy">
+      </div>
+      <div class="mb-text">
+        <h3>每個月都有不同的主題繪本 ⋯📚</h3>
+        <p>想知道接下來要上哪一本繪本嗎？</p>
+        <a class="btn" href="https://line.me/R/ti/p/@751efmgv?oat_content=url&ts=05181912" target="_blank" rel="noopener">💬 加 LINE 看本月課表</a>
+      </div>
     </div>
-  </div>
+
+    <div class="story-partners" id="partners">
+      <span class="sp-kicker">WHERE TO FIND ME 📍</span>
+      <h4>合作親子教室</h4>
+      <p>Lydia 目前在台北這幾間親子教室固定開課。點擊卡片追蹤教室 IG，掌握每月最新課表與故事課資訊。</p>
+      <div class="partners-grid">
+        <a class="partner" href="https://www.instagram.com/lovebymyhand" target="_blank" rel="noopener">
+          <div class="p-emoji">✋</div>
+          <h3>BY MY HAND 共學空間</h3>
+          <div class="p-en">BY MY HAND</div>
+          <div class="p-addr">站前新光三越（台北車站商圈）</div>
+          <span class="p-map">📷 追蹤教室 IG →</span>
+        </a>
+        <a class="partner" href="https://www.instagram.com/lionhome2025" target="_blank" rel="noopener">
+          <div class="p-emoji">🦁</div>
+          <h3>萊恩之家</h3>
+          <div class="p-en">LION HOME</div>
+          <div class="p-addr">台北市中山區北安路 458 巷 47 弄 10 號 1 樓</div>
+          <span class="p-map">📷 追蹤教室 IG →</span>
+        </a>
+        <a class="partner" href="https://www.instagram.com/totally_kids_tw" target="_blank" rel="noopener">
+          <div class="p-emoji">🎈</div>
+          <h3>兜樂</h3>
+          <div class="p-en">TOTALLY KIDS</div>
+          <div class="p-addr">台北市士林區中山北路五段 835 號</div>
+          <span class="p-map">📷 追蹤教室 IG →</span>
+        </a>
+      </div>
+    </div>
+  </div><!-- /course-block story -->
+
 </section>
 
 <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" style="background:var(--cream)">
@@ -1117,41 +1086,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" style="background:#E9A93D">
-  <path d="M0,40 C240,80 480,0 720,35 C960,70 1200,10 1440,45 L1440,70 L0,70 Z" fill="#FFF7EE"/>
-</svg>
-
-<!-- ===== PARTNERS ===== -->
-<section class="partners" id="partners">
-  <span class="sec-tag">WHERE TO FIND ME 📍</span>
-  <h2 class="sec-title">合作親子教室<span class="dot">.</span></h2>
-  <p class="sec-lead">Lydia 目前在台北這幾間親子教室固定開課。點擊卡片追蹤教室 IG，掌握每月最新課表與報名資訊！</p>
-
-  <div class="partners-grid">
-    <a class="partner" href="https://www.instagram.com/lovebymyhand" target="_blank" rel="noopener">
-      <div class="p-emoji">✋</div>
-      <h3>BY MY HAND 共學空間</h3>
-      <div class="p-en">BY MY HAND</div>
-      <div class="p-addr">站前新光三越（台北車站商圈）</div>
-      <span class="p-map">📷 追蹤教室 IG →</span>
-    </a>
-    <a class="partner" href="https://www.instagram.com/lionhome2025" target="_blank" rel="noopener">
-      <div class="p-emoji">🦁</div>
-      <h3>萊恩之家</h3>
-      <div class="p-en">LION HOME</div>
-      <div class="p-addr">台北市中山區北安路458巷47弄10號1樓</div>
-      <span class="p-map">📷 追蹤教室 IG →</span>
-    </a>
-    <a class="partner" href="https://www.instagram.com/totally_kids_tw" target="_blank" rel="noopener">
-      <div class="p-emoji">🎈</div>
-      <h3>兜樂</h3>
-      <div class="p-en">TOTALLY KIDS</div>
-      <div class="p-addr">台北市士林區中山北路五段835號</div>
-      <span class="p-map">📷 追蹤教室 IG →</span>
-    </a>
-  </div>
-</section>
-
-<svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" style="background:var(--cream)">
   <path d="M0,40 C240,80 480,0 720,35 C960,70 1200,10 1440,45 L1440,70 L0,70 Z" fill="#4E9B8F"/>
 </svg>
 
