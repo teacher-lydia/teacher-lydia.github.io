@@ -77,6 +77,41 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "inLanguage": ["en", "zh-Hant"]
     },
     {
+      "@type": "Event",
+      "@id": "https://www.teacherlydia.com/#halloween-party-2026",
+      "name": "Teacher Lydia's Halloween Party 萬聖節派對",
+      "description": "適合 3 至 7 歲孩子的兩小時全英文萬聖節派對，由 Teacher Lydia 與另外兩位外師帶領英文唱跳、繪本故事、闖關遊戲與創意手作，限額 15 位。",
+      "startDate": "2026-10-31T15:00:00+08:00",
+      "endDate": "2026-10-31T17:00:00+08:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "image": "https://www.teacherlydia.com/Teacher%20Lydia%20Class%20Photo%20(40).jpg",
+      "location": {
+        "@type": "Place",
+        "name": "捷運圓山站附近",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "台北市",
+          "addressCountry": "TW"
+        }
+      },
+      "organizer": {"@id": "https://www.teacherlydia.com/#teacher"},
+      "audience": {
+        "@type": "PeopleAudience",
+        "audienceType": "3 至 7 歲兒童",
+        "suggestedMinAge": 3,
+        "suggestedMaxAge": 7
+      },
+      "maximumAttendeeCapacity": 15,
+      "offers": {
+        "@type": "Offer",
+        "url": "https://forms.gle/JuGeXHeyVHmVAary6",
+        "price": "1700",
+        "priceCurrency": "TWD",
+        "availability": "https://schema.org/LimitedAvailability"
+      }
+    },
+    {
       "@type": "FAQPage",
       "@id": "https://www.teacherlydia.com/#faq",
       "mainEntity": [
@@ -647,7 +682,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .single-box{grid-template-columns:1fr;padding:24px 20px;}
     .single-points{grid-template-columns:1fr;}
   }
-  .event-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .event-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(260px,.65fr);gap:24px;align-items:start;}
   @media(max-width:760px){.event-grid{grid-template-columns:1fr;}}
   .event{background:var(--white);border:3px solid var(--ink);border-radius:20px;padding:24px;text-align:center;transition:.25s;}
   .event:nth-child(1){box-shadow:6px 6px 0 var(--mustard);transform:rotate(-1.2deg);}
@@ -658,6 +693,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .event .e-date{display:inline-block;font-family:'Baloo 2';font-weight:800;font-size:.85rem;background:var(--ink);color:var(--cream);border-radius:999px;padding:3px 14px;margin:10px 0 8px;}
   .event h4{font-size:1.15rem;}
   .event p{font-size:.85rem;color:var(--ink-soft);margin-top:4px;font-family:'Baloo 2';}
+  .event.featured{text-align:left;padding:30px;transform:none;box-shadow:8px 8px 0 var(--mustard);}
+  .event.featured:hover{transform:translateY(-4px);}
+  .event-top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;}
+  .event.featured .e-emoji{font-size:3rem;line-height:1;}
+  .event.featured .e-date{font-family:'Noto Sans TC';font-size:.88rem;margin:12px 0 10px;}
+  .event.featured h4{font-size:1.42rem;line-height:1.45;}
+  .event.featured .event-subtitle{font-family:'Noto Sans TC';font-size:.92rem;color:var(--coral);font-weight:800;margin-top:5px;}
+  .event-status{flex:0 0 auto;display:inline-block;background:var(--teal);color:#fff;border:2px solid var(--ink);border-radius:999px;padding:5px 13px;font-size:.78rem;font-weight:800;box-shadow:3px 3px 0 var(--ink);}
+  .event.featured .event-intro{font-family:'Noto Sans TC';font-size:.9rem;line-height:1.75;color:var(--ink-soft);margin-top:18px;}
+  .event-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px;}
+  .event-meta-item{background:var(--cream);border:2px dashed var(--ink);border-radius:13px;padding:11px 12px;}
+  .event-meta-item strong{display:block;font-size:.78rem;color:var(--coral);margin-bottom:2px;}
+  .event-meta-item span{display:block;font-size:.86rem;font-weight:700;line-height:1.5;}
+  .event-activities{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+  .event-activities span{display:inline-block;background:var(--peach);border:1.5px solid var(--ink);border-radius:999px;padding:5px 11px;font-size:.76rem;font-weight:700;}
+  .event-costume{background:#FFF0C9;border:2px solid var(--mustard);border-radius:14px;padding:12px 14px;margin-top:16px;font-size:.86rem;line-height:1.65;font-weight:700;}
+  .event-price-box{display:flex;align-items:center;justify-content:space-between;gap:18px;background:var(--peach);border:2.5px solid var(--ink);border-radius:16px;padding:15px 18px;margin-top:16px;}
+  .event-price-box span{display:block;font-size:.78rem;font-weight:800;color:var(--ink-soft);}
+  .event-price-box strong{display:block;font-size:1.35rem;color:var(--coral);line-height:1.35;}
+  .event-price-box small{display:block;font-size:.74rem;color:var(--ink-soft);text-align:right;line-height:1.5;}
+  .event-capacity{font-family:'Noto Sans TC' !important;font-size:.86rem !important;color:var(--ink) !important;font-weight:700;margin-top:15px !important;}
+  .event-register{width:100%;margin-top:16px;}
+  .event-contact{display:block;text-align:center;margin-top:12px;font-size:.83rem;font-weight:800;text-decoration:underline;}
+  .event-compact{display:flex;flex-direction:column;justify-content:center;align-items:center;}
+  .event-compact .event-note{font-family:'Noto Sans TC';line-height:1.6;margin-top:12px;}
+  @media(max-width:760px){
+    .event.featured{padding:24px 20px;}
+    .event-top{flex-direction:column;gap:10px;}
+    .event-meta{grid-template-columns:1fr;}
+    .event-price-box{align-items:flex-start;flex-direction:column;gap:6px;}
+    .event-price-box small{text-align:left;}
+  }
   .events-cta{text-align:center;margin-top:32px;}
   .faq-block{margin-top:76px;scroll-margin-top:90px;}
   .faq-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px;}
@@ -831,8 +898,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="ct-ico">🎉</div>
       <h3>特殊活動企劃</h3>
       <div class="ct-en">SPECIAL EVENTS</div>
-      <p>萬聖節、聖誕節主題派對，沉浸式節慶英文體驗，名額有限。</p>
-      <span class="ct-btn">🗓️ 看活動日期</span>
+      <p>10／31 萬聖節全英文派對開放報名，適合 3–7 歲；另有聖誕節主題活動。</p>
+      <span class="ct-btn">🎃 看活動與報名</span>
     </a>
   </div>
 
@@ -936,23 +1003,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- 4. 特殊活動企劃 -->
   <div class="course-block" id="events">
     <div class="cb-head"><span class="cb-num">4</span><h3>特殊活動企劃</h3></div>
-    <p class="cb-lead">節慶主題單日活動，帶孩子在遊戲、手作與派對中沉浸式體驗英文。名額有限，額滿為止！</p>
+    <p class="cb-lead">萬聖節派對現正開放報名！由 Teacher Lydia 與另外 2 位外師共同帶領，透過唱跳、繪本、闖關遊戲與手作，讓孩子在全英文派對中自然開口互動。</p>
     <div class="event-grid">
-      <div class="event">
-        <div class="e-emoji">🎃</div>
-        <div class="e-date">10 / 31</div>
-        <h4>萬聖節活動</h4>
-        <p>Halloween Party</p>
-      </div>
-      <div class="event">
+      <article class="event featured">
+        <div class="event-top">
+          <div>
+            <div class="e-emoji">🎃</div>
+            <div class="e-date">10／31（六）・15:00–17:00</div>
+            <h4>Teacher Lydia's Halloween Party 萬聖節派對</h4>
+            <p class="event-subtitle">2 小時全英文萬聖節派對</p>
+          </div>
+          <span class="event-status">開放報名</span>
+        </div>
+        <p class="event-intro">適合 3–7 歲孩子，由 Teacher Lydia 與另外 2 位外師共同帶領，增加孩子使用英文、參與活動與開口互動的機會。</p>
+        <div class="event-meta">
+          <div class="event-meta-item"><strong>適合年齡</strong><span>3–7 歲兒童</span></div>
+          <div class="event-meta-item"><strong>活動時間</strong><span>15:00–17:00</span></div>
+          <div class="event-meta-item"><strong>活動地點</strong><span>捷運圓山站附近</span></div>
+        </div>
+        <div class="event-activities" aria-label="活動內容">
+          <span>💃 英文唱跳</span>
+          <span>📚 英文繪本</span>
+          <span>🎯 闖關遊戲</span>
+          <span>🎨 創意手作</span>
+        </div>
+        <div class="event-costume">👻 歡迎變裝參加！鼓勵孩子穿上喜歡的萬聖節服裝或角色造型，一起開心參加派對。</div>
+        <div class="event-price-box">
+          <div><span>目前報名費</span><strong>NT$ 1,700／人</strong></div>
+          <small>早鳥優惠 NT$ 1,500／人<br>已於 10／01 截止</small>
+        </div>
+        <p class="event-capacity">限額 15 位孩子，額滿即停止報名。詳細地址與繳費方式請見報名表。</p>
+        <a class="g-btn event-register" href="https://forms.gle/JuGeXHeyVHmVAary6" target="_blank" rel="noopener">🎃 立即填寫萬聖節派對報名表</a>
+        <a class="event-contact" href="https://lin.ee/P3pqOXW" target="_blank" rel="noopener">有活動問題？透過 LINE 詢問</a>
+      </article>
+      <article class="event event-compact">
         <div class="e-emoji">🎄</div>
         <div class="e-date">12 / 25</div>
         <h4>聖誕節活動</h4>
         <p>Christmas Party</p>
-      </div>
+        <p class="event-note">詳細內容與報名資訊將另行公告。</p>
+      </article>
     </div>
     <div class="events-cta">
-      <a class="g-btn" href="https://line.me/R/ti/p/@751efmgv?oat_content=url&ts=05181912" target="_blank" rel="noopener" style="background:#06C755;margin:0;">💬 加 LINE 搶先報名節慶活動</a>
+      <a class="g-btn" href="https://line.me/R/ti/p/@751efmgv?oat_content=url&ts=05181912" target="_blank" rel="noopener" style="background:#06C755;margin:0;">💬 加 LINE 詢問其他節慶活動</a>
     </div>
   </div><!-- /course-block events -->
 
